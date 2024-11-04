@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Efficiency Optimization</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #3c6e71;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #d9ead3;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url(p_55542f36-9a01-11ef-849e-6e8bfdc1f9a6_wm.png) no-repeat center center/cover; /* Replace with your image URL */
+            position: relative;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-button {
+            background: #3c6e71;
+            color: white;
+            padding: 0.7rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero-button:hover {
+            background: #284b57;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #3c6e71;
+        }
+
+        /* Service Cards */
+        .service-cards {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none; /* Remove blue underline */
+            color: inherit; /* Inherit color from parent card */
+        }
+
+        /* Contact Form */
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact form input, #contact form textarea {
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact form button {
+            padding: 0.7rem;
+            background: #3c6e71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background: #284b57;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">Energy Efficiency</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Energy Efficiency Optimization</h1>
+                <p>Utilizing innovative technology to reduce energy consumption and enhance sustainability.</p>
+                <a href="#services" class="hero-button">Explore Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our mission is to promote energy efficiency through cutting-edge technology and innovative solutions. We work with businesses and individuals to reduce their energy footprint and implement sustainable practices that benefit both the environment and their bottom line.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <a href="energyaudits.html">
+                    <h3>Energy Audits</h3>
+                    <p>Comprehensive assessments to identify energy-saving opportunities in your facility.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="smartmetering.html">
+                    <h3>Smart Metering</h3>
+                    <p>Implementing advanced metering solutions to track energy usage in real-time.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="renewableenergy.html">
+                    <h3>Renewable Energy Integration</h3>
+                    <p>Integrating renewable energy sources into your existing systems for a greener solution.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="buildingautomation.html">
+                    <h3>Building Automation</h3>
+                    <p>Automating your building systems for optimized energy efficiency and comfort.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <h2>Benefits of Energy Efficiency</h2>
+        <p>Implementing energy efficiency measures not only reduces costs but also minimizes environmental impact. Our solutions lead to lower energy bills, increased comfort, and a smaller carbon footprint, paving the way for a sustainable future.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Interested in optimizing your energy efficiency? Reach out to learn more about our services.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Energy Efficiency Optimization. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

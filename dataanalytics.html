@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics for Sustainability</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2b6777;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #bbe1fa;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url(p_85ed83a8-99f3-11ef-8e67-829606c855ef_wm.png) no-repeat center center/cover;
+            position: relative;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-button {
+            background: #2b6777;
+            color: white;
+            padding: 0.7rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero-button:hover {
+            background: #1b3f4b;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #2b6777;
+        }
+
+        /* Service Cards */
+        .service-cards {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card a {
+            text-decoration: none; /* Remove blue underline */
+            color: inherit; /* Inherit color from parent card */
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Environmental Data Analysis Section */
+        .analysis-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .analysis-image {
+            width: 800px; /* Change as needed */
+            height: auto; /* Keep aspect ratio */
+            border-radius: 8px;
+        }
+
+        /* Contact Form */
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact form input, #contact form textarea {
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact form button {
+            padding: 0.7rem;
+            background: #2b6777;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background: #1b3f4b;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">Sustainable Analytics</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#importance">Importance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Data Analytics for a Sustainable Future</h1>
+                <p>Using data to drive eco-friendly decisions and promote sustainable development.</p>
+                <a href="#services" class="hero-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in using data analytics to provide insights for sustainability. Our team is committed to transforming data into actionable information that supports environmental protection, conservation, and resource optimization.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <a href="environmentaldata.html">
+                    <h3>Environmental Data Analysis</h3>
+                    <p>Analyzing environmental data to track pollution, resource usage, and impact assessments.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="carbon.html">
+                    <h3>Carbon Footprint Monitoring</h3>
+                    <p>Measuring and analyzing carbon footprints to support reduction strategies.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="energyconsumption.html">
+                    <h3>Energy Consumption Insights</h3>
+                    <p>Providing data-driven insights into energy consumption for efficiency and sustainability.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="wastemanagement.html">
+                    <h3>Waste Management Analytics</h3>
+                    <p>Optimizing waste management processes through data-driven analysis.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section id="importance">
+        <h2>Why Data Analytics is Crucial for Sustainability</h2>
+        <p>Data analytics enables us to understand the impact of human activities on the environment. By identifying trends, patterns, and opportunities, we can create solutions that minimize negative impacts, optimize resource usage, and enhance the overall well-being of our planet.</p>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Interested in our services? Reach out to learn more about how we can help your organization with sustainable data analytics solutions.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sustainable Analytics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
